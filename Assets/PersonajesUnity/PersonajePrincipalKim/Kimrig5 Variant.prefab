@@ -156,7 +156,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 23a9a0fe9e80a4045bd0b38f9aec9bc6, type: 2}
     - target: {fileID: 919132149155446097, guid: 686e662d5d3f4f54c8ff980ddda1d180, type: 3}
       propertyPath: m_Name
-      value: Kimrig5
+      value: Kimrig5 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 5640811524867753110, guid: 686e662d5d3f4f54c8ff980ddda1d180, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -196,3 +196,4 @@ MonoBehaviour:
   botiquin: 0
   suministroImportante: 0
   Arma: {fileID: 0}
+  movRbPlayer: {fileID: 0}
