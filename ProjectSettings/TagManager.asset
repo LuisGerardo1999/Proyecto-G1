@@ -7,6 +7,7 @@ TagManager:
   - Municion
   - Botiquin
   - SuministroImportante
+  - Comida
   layers:
   - Default
   - TransparentFX
