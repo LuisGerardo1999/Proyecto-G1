@@ -21,8 +21,8 @@ public class Movimientojugador : MonoBehaviour
     public Transform Arma;
 
     // audio
-    public AudioSource audioSource; 
-    public AudioClip soundCaminar, soundCorrer;
+    //public AudioSource audioSource; 
+    //public AudioClip soundCaminar, soundCorrer;
 
    //variable RigidBody
     [SerializeField]
@@ -65,13 +65,13 @@ public class Movimientojugador : MonoBehaviour
         // Caminar
         if ((Input.GetKey(KeyCode.UpArrow)) || (Input.GetKey(KeyCode.DownArrow)) && !(Input.GetKey(KeyCode.LeftShift)))
         {
-            this.caminar = true;
+            //this.caminar = true;
             anim.SetBool("IsCaminar", true);
         }
         else
         {
             anim.SetBool("IsCaminar", false);
-            this.caminar = false;
+           // this.caminar = false;
 
             //if (Input.GetKeyUp(KeyCode.UpArrow))
             //{
@@ -80,25 +80,25 @@ public class Movimientojugador : MonoBehaviour
         }
 
 
-        if (this.caminar == true)
-        {
-        //    audioSource = GetComponent<AudioSource>();
-        //    audioSource.clip = soundCaminar;
-            Debug.Log("Musica Caminar");
-           // audioSource.Play();
+        //if (this.caminar == true)
+        //{
+        ////    audioSource = GetComponent<AudioSource>();
+        ////    audioSource.clip = soundCaminar;
+        //    Debug.Log("Musica Caminar");
+        //   // audioSource.Play();
 
 
-            var sonidoCaminar = GetComponent<AudioSource>();
-             sonidoCaminar.clip = soundCaminar;
-            sonidoCaminar.Play();
+        //    var sonidoCaminar = GetComponent<AudioSource>();
+        //     sonidoCaminar.clip = soundCaminar;
+        //    sonidoCaminar.Play();
             
-        }
+        //}
 
-        if (this.caminar == false)
-        { 
-            Debug.Log("Musica Parar");
-            audioSource.Pause();
-        }
+        //if (this.caminar == false)
+        //{ 
+        //    Debug.Log("Musica Parar");
+        //    audioSource.Pause();
+        //}
 
 
 
@@ -108,8 +108,8 @@ public class Movimientojugador : MonoBehaviour
             velocidad = 0.09f;
             anim.SetBool("IsCorrer", true);
 
-            audioSource.clip = soundCorrer;
-            audioSource.Play();
+            //audioSource.clip = soundCorrer;
+            //audioSource.Play();
         }
         else{
             velocidad = 0.009f;
@@ -246,9 +246,22 @@ public class Movimientojugador : MonoBehaviour
         //        break;
         //    }
 
-    //}
+        //}
 
 
+
+
+
+       
     }
+
+
+
+
+
+
+
+
+
 
 }
