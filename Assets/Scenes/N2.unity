@@ -3277,7 +3277,16 @@ MonoBehaviour:
   ColliderEnter:
     m_PersistentCalls:
       m_Calls: []
+  ColliderExit:
+    m_PersistentCalls:
+      m_Calls: []
   TriggerEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  TriggerExit:
+    m_PersistentCalls:
+      m_Calls: []
+  TriggerStay:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1001 &124677318
@@ -5418,7 +5427,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &224077811
 RectTransform:
   m_ObjectHideFlags: 0
@@ -48260,7 +48269,16 @@ MonoBehaviour:
   ColliderEnter:
     m_PersistentCalls:
       m_Calls: []
+  ColliderExit:
+    m_PersistentCalls:
+      m_Calls: []
   TriggerEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  TriggerExit:
+    m_PersistentCalls:
+      m_Calls: []
+  TriggerStay:
     m_PersistentCalls:
       m_Calls: []
 --- !u!4 &1240111180
@@ -55693,7 +55711,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  ColliderExit:
+    m_PersistentCalls:
+      m_Calls: []
   TriggerEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  TriggerExit:
+    m_PersistentCalls:
+      m_Calls: []
+  TriggerStay:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1001 &1453099435
@@ -72556,7 +72583,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1825651650
 RectTransform:
   m_ObjectHideFlags: 0
