@@ -48,7 +48,7 @@ public class ConejoAnimac : MonoBehaviour
                 tiempoTranscurrido = tiempoInicial;
             }
 
-        
+        //% LUIS
 
 
         // Inicia ataque
