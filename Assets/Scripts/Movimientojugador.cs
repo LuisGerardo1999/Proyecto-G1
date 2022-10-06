@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Movimientojugador : MonoBehaviour
 {
@@ -180,6 +181,22 @@ public class Movimientojugador : MonoBehaviour
             Destroy(other.transform.gameObject);
             Debug.Log("La cantidad de vida es:  " + vida);
         }
+
+        if(other.transform.tag == "n1")
+        {
+            SceneManager.LoadScene(2);
+        }
+
+        if (other.transform.tag == "n2")
+        {
+            SceneManager.LoadScene(3);
+        }
+
+        if (other.transform.tag == "n3")
+        {
+            SceneManager.LoadScene(4);
+        }
+
     }
 
 

@@ -8,6 +8,9 @@ TagManager:
   - Botiquin
   - SuministroImportante
   - Comida
+  - n1
+  - n2
+  - n3
   layers:
   - Default
   - TransparentFX
