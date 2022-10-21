@@ -13,11 +13,11 @@ public class MovimientojugadorNCity : MonoBehaviour
     private float velocidad = 0.009f;
 
 
-    // Variambles Menu
+    // Variables Menu
     public int vida;
-    public int municion;
-    public int botiquin;
-    public int suministroImportante;
+    public int Municiones;
+    public int Botiquines;
+    public int ObjetivoMision;
     public Transform Arma;
 
     // audio
@@ -43,7 +43,7 @@ public class MovimientojugadorNCity : MonoBehaviour
     void Start()
     {
          vida = 5;
-         suministroImportante = 5;
+         
          salto = new Vector3(0.0f, 5.0f, 0.0f);  
 
     }
@@ -180,7 +180,44 @@ public class MovimientojugadorNCity : MonoBehaviour
             Destroy(other.transform.gameObject);
             Debug.Log("La cantidad de vida es:  " + vida);
         }
+
+        if (other.transform.tag == "Municion")
+        {
+             Municiones++;
+             Destroy(other.transform.gameObject);
+          }
+          if(Municiones == 15)
+          {
+              Debug.Log ("Tienes el Maximo de Municiones");
+        }
+    
+
+    
+        if (other.transform.tag == "Botiquin")
+        {
+             Botiquines++;
+             Destroy(other.transform.gameObject);
+          }
+          if(Botiquines == 5)
+          {
+              Debug.Log ("Tienes el Maximo de Botiquines");
+        }
+    
+
+    
+        if (other.transform.tag == "SuministroImportante")
+        {
+             ObjetivoMision++;
+             Destroy(other.transform.gameObject);
+          }
+          if(ObjetivoMision == 5)
+          {
+              Debug.Log ("Felicidades Has logrado Completar el nivel");
+        }
+
     }
+
+
 
 
 
