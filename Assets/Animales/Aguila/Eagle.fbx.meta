@@ -2,7 +2,22 @@ fileFormatVersion: 2
 guid: abeb176fe201ad344a0f60253c4b569a
 ModelImporter:
   serializedVersion: 20200
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      74: 8995811052673163353
+    second: Armature|Attac
+  - first:
+      74: -2065775210875148712
+    second: Armature|Fly
+  - first:
+      74: 5379053319256015380
+    second: Armature|FlyStay
+  - first:
+      74: 6869276295973601976
+    second: Armature|LampAction
+  - first:
+      74: 4327845269112880461
+    second: Lamp|LampAction
   externalObjects: {}
   materials:
     materialImportMode: 2
