@@ -41,6 +41,7 @@ public class Movimientojugador : MonoBehaviour
     public armas tipoArma;
 
 
+
     void Start()
     {
          vida = 5;
@@ -53,10 +54,11 @@ public class Movimientojugador : MonoBehaviour
        
         movimiento();
         cambioArma();
+ 
         
     }
 
-  
+ 
 
     private void movimiento()
     {
