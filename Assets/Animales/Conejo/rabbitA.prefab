@@ -785,6 +785,8 @@ GameObject:
   - component: {fileID: 2740076073211888896}
   - component: {fileID: 2740076073211888899}
   - component: {fileID: 2740076073211888897}
+  - component: {fileID: -994163896920981830}
+  - component: {fileID: 2464827406309287834}
   m_Layer: 0
   m_Name: rabbitA
   m_TagString: EnemyConejo
@@ -870,9 +872,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17ab5ddf15dd3b44ebd5243f8302bb6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player1Transf: {fileID: 0}
+  player1Transf: {fileID: 2041577954585057366, guid: 8af22bed85390904b9f1036382078d85, type: 3}
   salto: {x: 0, y: 5, z: 0}
-  velocidadConejo: 3.6
+  velocidadConejo: 2
+--- !u!195 &-994163896920981830
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3082675986554119555}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &2464827406309287834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3082675986554119555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64794c7f4de68b94ebc6c18156ce2d69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MensajesUI: {fileID: 0}
+  pointer: {fileID: 746185698098931670, guid: 8af22bed85390904b9f1036382078d85, type: 3}
+  EnemyNaveMesh: {fileID: -994163896920981830}
+  TransformPointer: {fileID: 3462170966352859021, guid: 42b71514b284519488662c587e31d0ef, type: 3}
 --- !u!1 &3277751488089398830
 GameObject:
   m_ObjectHideFlags: 0

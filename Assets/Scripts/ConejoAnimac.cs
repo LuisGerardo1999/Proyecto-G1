@@ -67,7 +67,7 @@ public class ConejoAnimac : MonoBehaviour
                 transform.position = Vector3.MoveTowards(transform.position, player1Transf.position , velocidadConejo * Time.deltaTime ); ;
 
                 //Salto
-                if (distancia< 0.8f)
+                if (distancia< 2f)
                 {    
                     
                    rigidbody.AddForce(salto, ForceMode.Impulse);

@@ -3,7 +3,11 @@ guid: 64794c7f4de68b94ebc6c18156ce2d69
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - MensajesUI: {instanceID: 0}
+  - pointer: {instanceID: 0}
+  - EnemyNaveMesh: {instanceID: 0}
+  - TransformPointer: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
