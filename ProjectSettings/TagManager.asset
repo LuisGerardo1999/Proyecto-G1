@@ -4,15 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Municion
-  - Botiquin
-  - SuministroImportante
   - Comida
   - n1
-  - n2
-  - n3
-  - FxTemporaire
   - EnemyConejo
+  - FxTemporaire
   layers:
   - Default
   - TransparentFX
@@ -20,7 +15,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - piso
   - 
   - 
   - 

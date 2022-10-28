@@ -11,7 +11,10 @@ public class Movimientojugador : MonoBehaviour
 
 
     // Variables movimiento
-    private float velocidad = 0.009f;
+   private float velocidad;
+    public Transform enPisoPos;
+    private bool enPiso;
+    public LayerMask piso;
 
 
     // Variambles Menu
@@ -40,13 +43,13 @@ public class Movimientojugador : MonoBehaviour
     public enum armas { cuchillo, pistola, revolver, ak47, escopeta, ametralladora, nada };
     public armas tipoArma;
 
-
+    public float salt = 0f;
 
     void Start()
     {
          vida = 5;
          suministroImportante = 5;
-         salto = new Vector3(0.0f, 5.0f, 0.0f);  
+         
 
     }
     void Update()
@@ -62,62 +65,37 @@ public class Movimientojugador : MonoBehaviour
 
     private void movimiento()
     {
-       
+        velocidad = 1.3f;
+        salto = new Vector3(0.0f, salt, 0.0f);
+        
+        if(Physics.CheckSphere(enPisoPos.position, 0.9f, piso) == true)
+        {
+            enPiso = true;
+        }else enPiso = false;
+
+
         var anim = GetComponent<Animator>();
 
         // Caminar
         if ((Input.GetKey(KeyCode.UpArrow)) || (Input.GetKey(KeyCode.DownArrow)) && !(Input.GetKey(KeyCode.LeftShift)))
         {
             //this.caminar = true;
-            anim.SetBool("IsCaminar", true);
+            anim.SetBool("IsWalking", true);
         }
         else
         {
-            anim.SetBool("IsCaminar", false);
-           // this.caminar = false;
-
-            //if (Input.GetKeyUp(KeyCode.UpArrow))
-            //{
-            //    audioSource.Stop();
-            //}
+            anim.SetBool("IsWalking", false);
         }
-
-
-        //if (this.caminar == true)
-        //{
-        ////    audioSource = GetComponent<AudioSource>();
-        ////    audioSource.clip = soundCaminar;
-        //    Debug.Log("Musica Caminar");
-        //   // audioSource.Play();
-
-
-        //    var sonidoCaminar = GetComponent<AudioSource>();
-        //     sonidoCaminar.clip = soundCaminar;
-        //    sonidoCaminar.Play();
-            
-        //}
-
-        //if (this.caminar == false)
-        //{ 
-        //    Debug.Log("Musica Parar");
-        //    audioSource.Pause();
-        //}
-
-
 
         //Correr
-        if ((Input.GetKey(KeyCode.LeftShift)) && (Input.GetKey(KeyCode.UpArrow)) || (Input.GetKey(KeyCode.DownArrow)))
+        if ((Input.GetKey(KeyCode.LeftShift)) && ((Input.GetKey(KeyCode.UpArrow)) || (Input.GetKey(KeyCode.DownArrow))))
         {
-            velocidad = 0.09f;
-            anim.SetBool("IsCorrer", true);
-
-            //audioSource.clip = soundCorrer;
-            //audioSource.Play();
+            velocidad = 7f;
+            anim.SetBool("IsRun", true);
         }
         else{
-            velocidad = 0.009f;
-            anim.SetBool("IsCorrer", false);
-           // audioSource.Stop();
+            
+            anim.SetBool("IsRun", false);           
         }
 
         // Agacharse
@@ -132,10 +110,11 @@ public class Movimientojugador : MonoBehaviour
         }
 
         //Salto
-        if (Input.GetKeyDown(KeyCode.Space)){
-            anim.SetBool("IsSaltar", true);
+        if (enPiso == true && Input.GetKey(KeyCode.Space))
+        {
+            anim.SetBool("IsJumping", true);
             movRbPlayer.AddForce(salto,ForceMode.Impulse);
-        }else anim.SetBool("IsSaltar", false);
+        }else anim.SetBool("IsJumping", false);
 
 
 
@@ -155,7 +134,7 @@ public class Movimientojugador : MonoBehaviour
 
 
         ////Movimiento, variable de prueba velocidad para correr.
-        transform.Translate(Input.GetAxis("Horizontal") * velocidad, 0, Input.GetAxis("Vertical") * velocidad);
+        transform.Translate(Input.GetAxis("Horizontal") * velocidad*Time.deltaTime, 0, Input.GetAxis("Vertical") * velocidad * Time.deltaTime);
         transform.Rotate(0, Input.GetAxis("Mouse X"), 0);
         
         
