@@ -76,8 +76,11 @@ public class Movimientojugador : MonoBehaviour
 
         var anim = GetComponent<Animator>();
 
+
+    // moverse adelante W, moverse atrás S, moverse a la izquierda A,  moverse a la derecha D
+
         // Caminar
-        if ((Input.GetKey(KeyCode.UpArrow)) || (Input.GetKey(KeyCode.DownArrow)) && !(Input.GetKey(KeyCode.LeftShift)))
+        if ((Input.GetKey(KeyCode.W)) || (Input.GetKey(KeyCode.S)) && !(Input.GetKey(KeyCode.LeftShift)))
         {
             //this.caminar = true;
             anim.SetBool("IsWalking", true);
@@ -88,7 +91,7 @@ public class Movimientojugador : MonoBehaviour
         }
 
         //Correr
-        if ((Input.GetKey(KeyCode.LeftShift)) && ((Input.GetKey(KeyCode.UpArrow)) || (Input.GetKey(KeyCode.DownArrow))))
+        if ((Input.GetKey(KeyCode.LeftShift)) && ((Input.GetKey(KeyCode.W)) || (Input.GetKey(KeyCode.S))))
         {
             velocidad = 7f;
             anim.SetBool("IsRun", true);

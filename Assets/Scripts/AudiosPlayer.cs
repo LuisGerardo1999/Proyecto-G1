@@ -18,21 +18,21 @@ public class AudiosPlayer : MonoBehaviour
 
     private void Update()
     {
-        if ((Input.GetKeyDown(KeyCode.UpArrow)) || (Input.GetKeyDown(KeyCode.DownArrow)) && !(Input.GetKeyDown(KeyCode.LeftShift)))
+        if ((Input.GetKeyDown(KeyCode.W)) || (Input.GetKeyDown(KeyCode.S)) && !(Input.GetKeyDown(KeyCode.LeftShift)))
         {
             sCaminar();
             Debug.Log("NUEVO AUDIO CAMINAR");
         }
 
-        if ((Input.GetKeyUp(KeyCode.UpArrow)) || (Input.GetKeyUp(KeyCode.DownArrow)) && !(Input.GetKeyUp(KeyCode.LeftShift))) { sPause(); }
+        if ((Input.GetKeyUp(KeyCode.W)) || (Input.GetKeyUp(KeyCode.S)) && !(Input.GetKeyUp(KeyCode.LeftShift))) { sPause(); }
 
 
-        if ((Input.GetKeyDown(KeyCode.LeftShift)) && (Input.GetKeyDown(KeyCode.UpArrow)) || (Input.GetKeyDown(KeyCode.DownArrow)))
+        if ((Input.GetKeyDown(KeyCode.LeftShift)) && (Input.GetKeyDown(KeyCode.W)) || (Input.GetKeyDown(KeyCode.S)))
         {
             sCaminar();
             Debug.Log("NUEVO AUDIO CORRER");
         }
-        if ((Input.GetKeyUp(KeyCode.LeftShift)) && (Input.GetKeyUp(KeyCode.UpArrow)) || (Input.GetKeyUp(KeyCode.DownArrow))) { sPause(); }
+        if ((Input.GetKeyUp(KeyCode.LeftShift)) && (Input.GetKeyUp(KeyCode.W)) || (Input.GetKeyUp(KeyCode.S))) { sPause(); }
 
     }
 
