@@ -3797,7 +3797,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.16981131, g: 0.16981131, b: 0.16981131, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4666,6 +4666,73 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1841549069}
   m_CullTransparentMesh: 1
+--- !u!1 &1905104318
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1905104321}
+  - component: {fileID: 1905104320}
+  - component: {fileID: 1905104319}
+  m_Layer: 0
+  m_Name: Interface
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1905104319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905104318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994edfdce91197e49a8304829c0a56d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _InfoEnemigo: {fileID: 0}
+  _InfoEnemigo1: {fileID: 0}
+  _InfoEnemigo2: {fileID: 0}
+  _InfoEnemigo3: {fileID: 0}
+  _InfoEnemigo4: {fileID: 0}
+  _InfoEnemigo5: {fileID: 0}
+  textoDescripcion: {fileID: 0}
+  ImagenCarta: {fileID: 0}
+  Nombre: {fileID: 0}
+--- !u!114 &1905104320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905104318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcfbdd86454c34e40aecc292beb14cb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PanelPausa: {fileID: 224077810}
+  PanelOptions: {fileID: 1261989728}
+--- !u!4 &1905104321
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905104318}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 466.71826, y: 256.1856, z: -37.2146}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2013806805
 GameObject:
   m_ObjectHideFlags: 0
