@@ -80,7 +80,7 @@ public class Movimientojugador : MonoBehaviour
     // moverse adelante W, moverse atrás S, moverse a la izquierda A,  moverse a la derecha D
 
         // Caminar
-        if ((Input.GetKey(KeyCode.W)) || (Input.GetKey(KeyCode.S)) && !(Input.GetKey(KeyCode.LeftShift)))
+        if (((Input.GetKey(KeyCode.W)) || (Input.GetKey(KeyCode.S))) && !(Input.GetKey(KeyCode.LeftShift)) && !(Input.GetKey(KeyCode.D)) && !(Input.GetKey(KeyCode.A)))
         {
             //this.caminar = true;
             anim.SetBool("IsWalking", true);
@@ -90,6 +90,51 @@ public class Movimientojugador : MonoBehaviour
             anim.SetBool("IsWalking", false);
         }
 
+        // Caminar Derecha
+        if (((Input.GetKey(KeyCode.W)) && (Input.GetKey(KeyCode.D)) )&& !(Input.GetKey(KeyCode.LeftShift)) && !(Input.GetKey(KeyCode.S)))
+        {
+            //this.caminar = true;
+            anim.SetBool("IsWRight", true);
+        }
+        else
+        {
+            anim.SetBool("IsWRight", false);
+        }
+
+
+        // Caminar Izquierda
+        if (((Input.GetKey(KeyCode.W)) && (Input.GetKey(KeyCode.A))) && !(Input.GetKey(KeyCode.LeftShift)) && !(Input.GetKey(KeyCode.S)))
+        {
+            //this.caminar = true;
+            anim.SetBool("IsWLeft", true);
+        }
+        else
+        {
+            anim.SetBool("IsWLeft", false);
+        }
+
+        //Derecho
+        if (Input.GetKey(KeyCode.D) && !(Input.GetKey(KeyCode.W)) && !(Input.GetKey(KeyCode.S)) && !(Input.GetKey(KeyCode.LeftShift)))
+        {
+            //this.caminar = true;
+            anim.SetBool("IsRight", true);
+        }
+        else
+        {
+            anim.SetBool("IsRight", false);
+        }
+
+
+        //Izquierdo
+        if (Input.GetKey(KeyCode.A) && !(Input.GetKey(KeyCode.W)) && !(Input.GetKey(KeyCode.S)) && !(Input.GetKey(KeyCode.LeftShift)))
+        {
+            //this.caminar = true;
+            anim.SetBool("IsLeft", true);
+        }
+        else
+        {
+            anim.SetBool("IsLeft", false);
+        }
         //Correr
         if ((Input.GetKey(KeyCode.LeftShift)) && ((Input.GetKey(KeyCode.W)) || (Input.GetKey(KeyCode.S))))
         {

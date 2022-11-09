@@ -1210,7 +1210,7 @@ MonoBehaviour:
   municion: 0
   botiquin: 0
   suministroImportante: 0
-  Arma: {fileID: 0}
+  Arma: {fileID: 389397751}
   movRbPlayer: {fileID: 608580714}
   salto: {x: 0, y: 0, z: 0}
   cuchillo: {fileID: 389397750}
@@ -1221,7 +1221,7 @@ MonoBehaviour:
   ametralladora: {fileID: 389397750}
   arma: {fileID: 389397750}
   tipoArma: 6
-  salt: 0.8
+  salt: 0.5
 --- !u!114 &608580716
 MonoBehaviour:
   m_ObjectHideFlags: 0
