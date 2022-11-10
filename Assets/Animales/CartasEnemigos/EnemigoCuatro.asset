@@ -9,10 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74f6ebc4191c26d489c4b4c23751597e, type: 3}
+  m_Script: {fileID: 11500000, guid: eda0f3affaa7cd04ba951cafbc1cd606, type: 3}
   m_Name: EnemigoCuatro
   m_EditorClassIdentifier: 
-  nombreCarta: Aguila
-  descripcionCarta: 'El Aguila activa su ataque cuando estas en su rango de mira
-    y te roba suministros '
-  dibujoCarta: {fileID: 21300000, guid: 9e79dc444e1b20c448f80450a4a0cad0, type: 3}
+  nombreCarta: Lobo
+  descripcionCarta: el lobo es de los mas peligrosos ya que ademas de ser muy fuerte
+    ataca en manada y cada mordida quita 10 puntos de vida, Evita ser acorralado
+    para que no seas su aperitivo
+  dibujoCarta: {fileID: 21300000, guid: 3602e2a0737527d44a1fa96b08bfa9af, type: 3}

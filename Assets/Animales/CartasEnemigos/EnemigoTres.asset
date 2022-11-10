@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74f6ebc4191c26d489c4b4c23751597e, type: 3}
+  m_Script: {fileID: 11500000, guid: eda0f3affaa7cd04ba951cafbc1cd606, type: 3}
   m_Name: EnemigoTres
   m_EditorClassIdentifier: 
-  nombreCarta: Conejo
-  descripcionCarta: El conejo te ataca y salta cuando se acerca quita 1 punto de
-    vida
-  dibujoCarta: {fileID: 21300000, guid: a87b2d47b592bf54e9009bf2a32203fc, type: 3}
+  nombreCarta: Aguila
+  descripcionCarta: Este enemigo ataca cuando entras en su rango de mira o cuando
+    se siente Amenazada, Quita 7 puntos de vida
+  dibujoCarta: {fileID: 21300000, guid: 6e07af37ab6b9de4ead8508672d048e8, type: 3}

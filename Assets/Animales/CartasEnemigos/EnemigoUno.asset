@@ -9,10 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74f6ebc4191c26d489c4b4c23751597e, type: 3}
+  m_Script: {fileID: 11500000, guid: eda0f3affaa7cd04ba951cafbc1cd606, type: 3}
   m_Name: EnemigoUno
   m_EditorClassIdentifier: 
-  nombreCarta: EnemigoRata
-  descripcionCarta: Este enemigo corre por muchos lugares aleatoreamente y puede
-    morder si esta cerca de ti bajandote 2 puntos de vida
-  dibujoCarta: {fileID: 21300000, guid: 0844a2537e6b1c04d98ab67407cd058d, type: 3}
+  nombreCarta: Rata
+  descripcionCarta: Esta Rata es muy peligrosa ya que la cantidad de enemigos es
+    muy grande y corre muy rapido para atacarte usualmente en grupo, cada ataque
+    quita 1 punto de vida
+  dibujoCarta: {fileID: 21300000, guid: 3ee16918b3236af468303e254547b6e6, type: 3}

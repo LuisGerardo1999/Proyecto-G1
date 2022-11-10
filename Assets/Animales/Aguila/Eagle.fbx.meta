@@ -18,7 +18,12 @@ ModelImporter:
   - first:
       74: 4327845269112880461
     second: Lamp|LampAction
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fogel_Mat
+    second: {fileID: 2100000, guid: f10924db28e1efb408accaf5c3604539, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
