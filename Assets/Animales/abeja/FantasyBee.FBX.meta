@@ -3,7 +3,12 @@ guid: 675bc3ee0df35f049a4dee9bbfbb5c69
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FantasyBeeMat
+    second: {fileID: 2100000, guid: 2faa208cb15168f4daa55adc47632b4d, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

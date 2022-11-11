@@ -27,7 +27,12 @@ ModelImporter:
   - first:
       74: 1099495709079093668
     second: Spider_walk
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RetopoGroup2_Default__texture_spider_jpg
+    second: {fileID: 2100000, guid: 78d88e566e5f7b14aaa719c52b23bd6c, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
