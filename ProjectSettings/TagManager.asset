@@ -8,6 +8,9 @@ TagManager:
   - n1
   - EnemyConejo
   - FxTemporaire
+  - pick40
+  - pick80
+  - pick100
   layers:
   - Default
   - TransparentFX

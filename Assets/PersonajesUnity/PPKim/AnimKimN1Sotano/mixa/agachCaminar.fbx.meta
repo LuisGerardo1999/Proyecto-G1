@@ -1,0 +1,307 @@
+fileFormatVersion: 2
+guid: adc3d946a776b8a40b2973ccc91d8230
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      74: 1827226128182048838
+    second: Take 001
+  - first:
+      74: -203655887218126122
+    second: mixamo.com
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'mixamo.com' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'c3' is inbetween humanoid transforms and
+      has rotation animation that will be discarded.\n\t'c5' is inbetween humanoid
+      transforms and has rotation animation that will be discarded.\n\t'c6' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: mixamo.com
+      takeName: mixamo.com
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 38
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: agachCaminar(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CuerpoPP
+      parentName: agachCaminar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 0.01, y: 0.01, z: 0.01}
+    - name: Cadera
+      parentName: agachCaminar(Clone)
+      position: {x: -0.0000039502047, y: 0.99773973, z: 0.028836397}
+      rotation: {x: -0.07697068, y: -0.07151551, z: -0.6870678, w: 0.7189569}
+      scale: {x: 1, y: 1, z: 1.000001}
+    - name: P1
+      parentName: Cadera
+      position: {x: 0.00033473969, y: -0.011998117, z: 0.003859952}
+      rotation: {x: 0.011154621, y: 0.098864496, z: 0.85317487, w: 0.51204884}
+      scale: {x: 0.9999999, y: 0.99999976, z: 0.99999994}
+    - name: p5
+      parentName: P1
+      position: {x: -0.11747098, y: -0.00000059604645, z: -0.000000007450581}
+      rotation: {x: -0.09066362, y: -0.07273459, z: 0.44501615, w: 0.8879473}
+      scale: {x: 1.0000004, y: 1.0000002, z: 0.9999998}
+    - name: p6
+      parentName: p5
+      position: {x: -0.42976078, y: 0.000003874302, z: 0.000000052154064}
+      rotation: {x: 0.038800765, y: -0.12682219, z: 0.021095673, w: 0.99094176}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000001}
+    - name: p7
+      parentName: p6
+      position: {x: -0.4967113, y: 0.00000016391277, z: 0.000000022351742}
+      rotation: {x: 0.45082653, y: 0.5064494, z: -0.5813629, w: 0.4497574}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: p8
+      parentName: p7
+      position: {x: -0.16086522, y: 0.00000007636845, z: 0.000000029802322}
+      rotation: {x: -0.0036870092, y: -0.018943042, z: 0.06828503, w: 0.9974792}
+      scale: {x: 1.0000006, y: 0.99999994, z: 1.0000005}
+    - name: P2
+      parentName: Cadera
+      position: {x: 0.0025094748, y: 0.012970574, z: 0.0037127435}
+      rotation: {x: 0.010212407, y: -0.10540837, z: 0.86615145, w: -0.4884326}
+      scale: {x: 1.0000001, y: 0.99999976, z: 0.99999994}
+    - name: p1
+      parentName: P2
+      position: {x: -0.122985095, y: 0, z: 0.000000011175871}
+      rotation: {x: 0.09493678, y: -0.06786547, z: -0.46822688, w: 0.8758681}
+      scale: {x: 1.0000008, y: 0.9999999, z: 0.999999}
+    - name: p2
+      parentName: p1
+      position: {x: -0.42623863, y: 0.00000020861626, z: 0.000000014901161}
+      rotation: {x: -0.039646413, y: -0.1260299, z: -0.01783289, w: 0.9910735}
+      scale: {x: 0.9999992, y: 1.0000004, z: 1.000001}
+    - name: p3
+      parentName: p2
+      position: {x: -0.50192726, y: -0.00000029802322, z: 0.000000014901161}
+      rotation: {x: -0.39186448, y: 0.5707262, z: 0.5167786, w: 0.50364053}
+      scale: {x: 1.0000002, y: 1.0000007, z: 1.0000001}
+    - name: p4
+      parentName: p3
+      position: {x: -0.1496872, y: -0.00000025331974, z: 0.000000014901161}
+      rotation: {x: 0.003827571, y: -0.04727577, z: -0.1019013, w: 0.99366313}
+      scale: {x: 1, y: 0.99999994, z: 1.0000001}
+    - name: C1
+      parentName: Cadera
+      position: {x: -0.08442366, y: 0.0044918135, z: 0.000013232231}
+      rotation: {x: -0.0057947147, y: 0.1468439, z: 0.0004484802, w: 0.9891426}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: c2
+      parentName: C1
+      position: {x: -0.08135319, y: 0.0015123188, z: 0.00004185736}
+      rotation: {x: 0.024959952, y: -0.076945916, z: -0.042132065, w: 0.995832}
+      scale: {x: 1.0000001, y: 0.99999994, z: 1}
+    - name: c3
+      parentName: c2
+      position: {x: -0.076985955, y: 0.0000000037252903, z: -0.0000000037252903}
+      rotation: {x: -0.020759115, y: -0.0059908694, z: 0.014951161, w: 0.99965477}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000004}
+    - name: c4
+      parentName: c3
+      position: {x: -0.06558192, y: -0.00072438177, z: -0.000014074147}
+      rotation: {x: 0.021364054, y: -0.032203194, z: -0.0048753717, w: 0.9992411}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000002}
+    - name: c5
+      parentName: c4
+      position: {x: -0.068270564, y: -0.0014468785, z: 0.000032141805}
+      rotation: {x: -0.025370836, y: 0.05195785, z: 0.010800341, w: 0.9982686}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000002}
+    - name: Bone030
+      parentName: c5
+      position: {x: -0.09572315, y: -0.007179992, z: -0.00025736913}
+      rotation: {x: 0.015940903, y: 0.010855046, z: 0.75946474, w: 0.65026253}
+      scale: {x: 1.0000008, y: 1.0000004, z: 1.0000005}
+    - name: Bone031
+      parentName: Bone030
+      position: {x: -0.16431499, y: 0.00000011920929, z: 0}
+      rotation: {x: -0.11918684, y: -0.0028457695, z: -0.05609443, w: 0.991282}
+      scale: {x: 0.9999991, y: 1.0000002, z: 0.99999934}
+    - name: Bone032
+      parentName: Bone031
+      position: {x: -0.24760616, y: -0.00000011920929, z: 0}
+      rotation: {x: 0.2002826, y: 0.03146564, z: -0.028872387, w: 0.97880703}
+      scale: {x: 1, y: 0.9999998, z: 0.9999998}
+    - name: Bone033
+      parentName: Bone032
+      position: {x: -0.25243378, y: -0.00000011920929, z: 0.000000059604645}
+      rotation: {x: -0.059137315, y: -0.02938389, z: 0.038438648, w: 0.9970767}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1}
+    - name: Bone034
+      parentName: Bone033
+      position: {x: -0.0596205, y: 0.00000011920929, z: 0.000000059604645}
+      rotation: {x: -0.0026383207, y: 0.14342308, z: -0.00038171365, w: 0.9896579}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1.0000002}
+    - name: c6
+      parentName: c5
+      position: {x: -0.09142947, y: 0.0000005029142, z: 0.0000000037252903}
+      rotation: {x: 0.023509277, y: 0.036365446, z: -0.0019161855, w: 0.9990602}
+      scale: {x: 1.0000005, y: 1.0000004, z: 1.0000006}
+    - name: c7
+      parentName: c6
+      position: {x: -0.08754492, y: -0.0007027723, z: 0.000013977289}
+      rotation: {x: -0.013587284, y: 0.036052596, z: 0.009410651, w: 0.9992132}
+      scale: {x: 1.0000005, y: 1, z: 1.0000006}
+    - name: c8
+      parentName: c7
+      position: {x: -0.08965266, y: -0.0000000055879354, z: 0}
+      rotation: {x: 0.0076286537, y: 0.039903007, z: -0.0056911577, w: 0.99915826}
+      scale: {x: 1, y: 1.0000004, z: 1.0000004}
+    - name: c9
+      parentName: c8
+      position: {x: -0.13681126, y: 0.0000000016298145, z: 0}
+      rotation: {x: -0.0006548092, y: -0.13306461, z: 0.023387905, w: 0.9908312}
+      scale: {x: 0.9999986, y: 0.99999994, z: 0.9999977}
+    - name: OjosPP
+      parentName: c9
+      position: {x: 0.09998977, y: -0.0038415045, z: 0.07698117}
+      rotation: {x: -0.49287277, y: -0.46364307, z: 0.5111, w: 0.52998894}
+      scale: {x: 0.01, y: 0.01, z: 0.01}
+    - name: Bone035
+      parentName: c5
+      position: {x: -0.09716773, y: 0.007519767, z: 0.00020623207}
+      rotation: {x: 0.011491571, y: -0.019381508, z: 0.7394094, w: -0.67287904}
+      scale: {x: 1.0000005, y: 1.0000007, z: 1.0000006}
+    - name: Bone036
+      parentName: Bone035
+      position: {x: -0.1677248, y: 0, z: -0.000000007450581}
+      rotation: {x: 0.12566403, y: 0.0039823256, z: 0.026710158, w: 0.99170524}
+      scale: {x: 0.9999991, y: 1.0000004, z: 1}
+    - name: Bone037
+      parentName: Bone036
+      position: {x: -0.25601417, y: -0.00000047683716, z: 0.000000044703484}
+      rotation: {x: -0.20124291, y: 0.031397697, z: 0.026701981, w: 0.9786739}
+      scale: {x: 1.0000005, y: 1.0000002, z: 0.99999946}
+    - name: Bone038
+      parentName: Bone037
+      position: {x: -0.25516966, y: 0.00000011920929, z: -0.000000044703484}
+      rotation: {x: 0.03507373, y: -0.027919864, z: 0.008146894, w: 0.9989615}
+      scale: {x: 1.0000001, y: 1.0000004, z: 1.0000002}
+    - name: Bone039
+      parentName: Bone038
+      position: {x: -0.06226328, y: 0.00000011920929, z: -0.000000029802322}
+      rotation: {x: -0.00000048801274, y: 0.16144638, z: -0.000000025611355, w: 0.9868815}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1.0000006}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
