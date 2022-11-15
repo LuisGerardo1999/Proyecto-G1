@@ -18,14 +18,17 @@ public class NawMeshconejo : Mensajes
     {
         float dist = Vector3.Distance(transform.position, TransformPointer.position);
 
-        if(dist < 20)
+        if(dist <= 20)
         {
             EnemyNaveMesh.destination = pointer.transform.position;
+            Debug.Log("Distancia menor" + dist);
         }
-        if(dist > 21) 
+
+       /* if(dist > 21) 
         {
             EnemyNaveMesh.destination = EnemyNaveMesh.transform.position;
         }
+        */
     }
 
     private void OnCollisionEnter(Collision collision)

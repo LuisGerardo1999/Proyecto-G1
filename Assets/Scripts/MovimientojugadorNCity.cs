@@ -35,9 +35,9 @@ public class MovimientojugadorNCity : MonoBehaviour
 
 
     // armas
-    public GameObject cuchillo, pistola, revolver, ak47, escopeta, ametralladora, arma;
-    public enum armas { cuchillo, pistola, revolver, ak47, escopeta, ametralladora, nada };
-    public armas tipoArma;
+    //public GameObject cuchillo, pistola, revolver, ak47, escopeta, ametralladora, arma;
+    //public enum armas { cuchillo, pistola, revolver, ak47, escopeta, ametralladora, nada };
+    //public armas tipoArma;
 
 
     void Start()
@@ -51,7 +51,7 @@ public class MovimientojugadorNCity : MonoBehaviour
     {
        
         movimiento();
-        cambioArma();
+        //cambioArma();
         
     }
 
@@ -241,13 +241,13 @@ public class MovimientojugadorNCity : MonoBehaviour
 
     //}
 
-    private void cambioArma()
-    {
+   //private void cambioArma()
+   
         //switch (tipoArma)
         //{
 
-            pistola.SetActive(armas.pistola == tipoArma);
-            ak47.SetActive(armas.ak47 == tipoArma);
+       //     pistola.SetActive(armas.pistola == tipoArma);
+       //     ak47.SetActive(armas.ak47 == tipoArma);
 
         //case armas.cuchillo:
         //    {
@@ -290,15 +290,7 @@ public class MovimientojugadorNCity : MonoBehaviour
 
 
        
-    }
-
-
-
-
-
-
-
-
+    
 
 
 }

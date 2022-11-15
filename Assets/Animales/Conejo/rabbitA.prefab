@@ -872,7 +872,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17ab5ddf15dd3b44ebd5243f8302bb6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player1Transf: {fileID: 6869712378258467675, guid: 9dbc305c3ae638e42819d89032606905, type: 3}
+  player1Transf: {fileID: 6662857381101370701, guid: 8d69aa493beb6f24a86da8c78c75c85f, type: 3}
   salto: {x: 0, y: 5, z: 0}
   velocidadConejo: 1
 --- !u!195 &-994163896920981830
@@ -910,9 +910,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MensajesUI: {fileID: 0}
-  pointer: {fileID: 6061229020371186145, guid: 9dbc305c3ae638e42819d89032606905, type: 3}
+  pointer: {fileID: 6286156259583502327, guid: 8d69aa493beb6f24a86da8c78c75c85f, type: 3}
   EnemyNaveMesh: {fileID: -994163896920981830}
-  TransformPointer: {fileID: 6869712378258467675, guid: 9dbc305c3ae638e42819d89032606905, type: 3}
+  TransformPointer: {fileID: 6662857381101370701, guid: 8d69aa493beb6f24a86da8c78c75c85f, type: 3}
 --- !u!1 &3277751488089398830
 GameObject:
   m_ObjectHideFlags: 0

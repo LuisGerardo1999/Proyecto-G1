@@ -1558,9 +1558,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26f8fff640330e846adcb337c4ec594f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointer: {fileID: 1219998160010820540, guid: 9dbc305c3ae638e42819d89032606905, type: 3}
+  pointer: {fileID: 6286156259583502327, guid: 8d69aa493beb6f24a86da8c78c75c85f, type: 3}
   EnemyNaveMesh: {fileID: -1529074603810969124}
-  TransformPointer: {fileID: 1992171515627659526, guid: 9dbc305c3ae638e42819d89032606905, type: 3}
+  TransformPointer: {fileID: 6662857381101370701, guid: 8d69aa493beb6f24a86da8c78c75c85f, type: 3}
 --- !u!95 &1257854274816841146
 Animator:
   serializedVersion: 3
@@ -1592,7 +1592,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee66000ef8bf76847b7555f62603d153, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TransformPlayer: {fileID: 1992171515627659526, guid: 9dbc305c3ae638e42819d89032606905, type: 3}
+  TransformPlayer: {fileID: 6662857381101370701, guid: 8d69aa493beb6f24a86da8c78c75c85f, type: 3}
 --- !u!1 &8450305235679190012
 GameObject:
   m_ObjectHideFlags: 0
