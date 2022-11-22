@@ -27,7 +27,7 @@ public class NMTigre : Mensajes
         bool isRunning = animator.GetBool(isRunningHash);
         float dist = Vector3.Distance(transform.position, TransformPointer.position);
 
-        if(dist <= 10)
+        if(dist <= 20)
         {
             EnemyNaveMesh.destination = pointer.transform.position;
             animator.SetBool(isRunningHash, true);
