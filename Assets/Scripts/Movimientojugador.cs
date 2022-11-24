@@ -43,10 +43,16 @@ public class Movimientojugador : MonoBehaviour
     //public enum armas { nada, pistola, botiquin, ak47, m4a1, rifle, granada };
     //public armas tipoArma;
 
+    int municPistola = 0, municAk47 = 0, municM4a1 = 0, municRifle = 0, municGranada = 0;
+
+
     public float salt = 0f;
     public int bandArma = 0;
     private int contador = 0;
 
+    //camara
+    public GameObject camarV;
+    public GameObject miraV;
 
     void Start()
     {
@@ -54,6 +60,13 @@ public class Movimientojugador : MonoBehaviour
          suministroImportante = 5;
          this.pick = 0;
 
+        //inicial
+        Debug.Log(municPistola);
+        Debug.Log(municAk47);
+        Debug.Log(municM4a1 );
+        Debug.Log(municRifle);
+        Debug.Log(municGranada);
+           
 
     }
     void Update()
@@ -91,7 +104,7 @@ public class Movimientojugador : MonoBehaviour
         {
             //this.caminar = true;
             anim.SetBool("IsWalking", true);
-            Debug.Log("test");
+            
         }
         else
         {
@@ -99,27 +112,31 @@ public class Movimientojugador : MonoBehaviour
         }
 
         // Caminar Derecha
-        if (((Input.GetKey(KeyCode.W)) && (Input.GetKey(KeyCode.D))) && !(Input.GetKey(KeyCode.LeftShift)) && !(Input.GetKey(KeyCode.S)))
+        if ( ( ((Input.GetKey(KeyCode.W)) && (Input.GetKey(KeyCode.D)) )  || ((Input.GetKey(KeyCode.A)) && (Input.GetKey(KeyCode.S))) ) && !(Input.GetKey(KeyCode.LeftShift)) )
         {
             anim.SetBool("IsWRight", true);
-            transform.Rotate(0, .3f, 0);
+            anim.SetBool("IsWalking", true);
+            transform.Rotate(0, 0.9f, 0);
             //Quaternion quat = Quaternion.Euler(0f, Input.GetAxis("Mouse X") + 90f, 0f);
         }
         else
         {
             anim.SetBool("IsWRight", false);
+            
         }
 
 
         // Caminar Izquierda
-        if (((Input.GetKey(KeyCode.W)) && (Input.GetKey(KeyCode.A))) && !(Input.GetKey(KeyCode.LeftShift)) && !(Input.GetKey(KeyCode.S)))
+        if ((((Input.GetKey(KeyCode.W)) && (Input.GetKey(KeyCode.A)) || ((Input.GetKey(KeyCode.D)) && (Input.GetKey(KeyCode.S)))) && !(Input.GetKey(KeyCode.LeftShift)) ))
         {
             anim.SetBool("IsWLeft", true);
-            transform.Rotate(0, -.3f, 0);
+            anim.SetBool("IsWalking", true);
+            transform.Rotate(0, -0.9f, 0);
         }
         else
         {
             anim.SetBool("IsWLeft", false);
+            
         }
 
         //Derecho
@@ -135,7 +152,7 @@ public class Movimientojugador : MonoBehaviour
 
 
         //Izquierdo
-        if (Input.GetKey(KeyCode.A) && !(Input.GetKey(KeyCode.W)) && !(Input.GetKey(KeyCode.S)) && !(Input.GetKey(KeyCode.LeftShift)))
+        if (Input.GetKey(KeyCode.A) && !(Input.GetKey(KeyCode.W) ) && !(Input.GetKey(KeyCode.S)) && !(Input.GetKey(KeyCode.LeftShift)))
         {
             //this.caminar = true;
             anim.SetBool("IsLeft", true);
@@ -147,7 +164,7 @@ public class Movimientojugador : MonoBehaviour
         //Correr
         if ((Input.GetKey(KeyCode.LeftShift)) && ((Input.GetKey(KeyCode.W)) || (Input.GetKey(KeyCode.S))))
         {
-            velocidad = 7f;
+            velocidad = 2.9f;
             anim.SetBool("IsRun", true);
         }
         else{
@@ -168,7 +185,7 @@ public class Movimientojugador : MonoBehaviour
 
         // pick medio
 
-        if ((Input.GetKey(KeyCode.T)) && (pick == 2))
+        if ((Input.GetKey(KeyCode.T)) )//&& (pick == 2))
         {
             anim.SetBool("Pick80", true);
         }
@@ -230,22 +247,13 @@ public class Movimientojugador : MonoBehaviour
 
 
         // Disparar Luger
-        if ( (bandArma ==1) || (bandArma == 8))
+        if ( (bandArma ==1) || (bandArma == 7))
         {
                 anim.SetBool("IsGunIdle", true);
         }
         else
         {
                 anim.SetBool("IsGunIdle", false);
-        }
-
-        if (bandArma == 2)
-        {
-            anim.SetBool("IsBotiquin", true);
-        }
-        else
-        {
-            anim.SetBool("IsBotiquin", false);
         }
 
         if (bandArma == 3 || bandArma == 4 || bandArma == 5)
@@ -269,7 +277,7 @@ public class Movimientojugador : MonoBehaviour
         }
 
         //hacha
-        if (Input.GetKey(KeyCode.Q))
+        if ((bandArma == 2))
         {
             anim.SetBool("IsHacha", true);
         }
@@ -290,7 +298,7 @@ public class Movimientojugador : MonoBehaviour
 
         //DISPARAR
 
-        if (Input.GetMouseButtonDown(0) &&  ( (bandArma ==1 ) || (bandArma == 8) ) )
+        if (Input.GetMouseButtonDown(0) &&  ( (bandArma ==1 ) || (bandArma == 3) || (bandArma == 4) || (bandArma == 5) || (bandArma == 7)) )
         {
             anim.SetBool("IsGunShoot", true);
         }
@@ -299,15 +307,39 @@ public class Movimientojugador : MonoBehaviour
             anim.SetBool("IsGunShoot", false);
         }
 
+        //// Ataque Hacha
+        if (Input.GetMouseButtonDown(0) && ((bandArma == 2)))
+        {
+            anim.SetBool("IsHachaAttack", true);
+        }
+        else
+        {
+            anim.SetBool("IsHachaAttack", false);
+        }
+
 
         ////Movimiento, variable de prueba velocidad para correr.
         transform.Translate(Input.GetAxis("Horizontal") * velocidad*Time.deltaTime, 0, Input.GetAxis("Vertical") * velocidad * Time.deltaTime);
         transform.Rotate(0, Input.GetAxis("Mouse X"), 0);
-        
-        
 
-        
-        
+
+        if (bandArma == 1 || bandArma == 2 || bandArma == 3 || bandArma == 4 || bandArma == 5)
+        {
+            camarV.transform.Rotate(-Input.GetAxis("Mouse Y"), 0, 0);
+            if(bandArma !=2)
+            {
+                miraV.SetActive(true);
+            }else miraV.SetActive(false);
+
+        }
+        else
+        {
+            camarV.transform.Rotate(0, 0, 0);
+            miraV.SetActive(false);
+        }
+
+
+
     }
 
     private void movimientoEfecto()
@@ -328,6 +360,46 @@ public class Movimientojugador : MonoBehaviour
             vida += 20;
             Destroy(other.transform.gameObject);
             Debug.Log("La cantidad de vida es:  " + vida);
+        }
+
+          
+        if (other.transform.tag == "municPistola")
+        {
+            municPistola += 10;
+            Destroy(other.transform.gameObject);
+            
+
+        }
+
+        if (other.transform.tag == "municAk47")
+        {
+            municPistola += 8;
+            Destroy(other.transform.gameObject);
+            Debug.Log(municAk47);
+            
+        }
+
+        if (other.transform.tag == "municM4a1")
+        {
+            municPistola += 8;
+            Destroy(other.transform.gameObject);
+            Debug.Log(municM4a1);
+           
+        }
+
+        if (other.transform.tag == "municRifle")
+        {
+            municPistola += 4;
+            Destroy(other.transform.gameObject);
+            Debug.Log(municRifle);
+            
+        }
+
+        if (other.transform.tag == "municGranada")
+        {
+            municPistola += 5;
+            Destroy(other.transform.gameObject);
+            Debug.Log(municGranada);
         }
 
 
@@ -379,6 +451,30 @@ public class Movimientojugador : MonoBehaviour
         {
             this.pick = 0;
         }
+
+    }
+
+
+    //void OnCollisionEnter(Collision collision)
+    void OnCollisionStay(Collision collision)
+    {
+
+
+        if (collision.transform.tag == "enemigo1")
+        {
+
+            Debug.Log("quita vida " + vida);
+            //Debug.Log(vida);
+            vida -= 1;
+        }
+
+        if (collision.transform.tag == "enemigo1")
+        {
+
+            Debug.Log("MURO PLAYER");
+            
+        }
+
 
     }
 
@@ -454,10 +550,10 @@ public class Movimientojugador : MonoBehaviour
         {
             bandArma = 7;
         }
-        if (Input.GetKeyDown(KeyCode.Z))
-        {
-            bandArma = 8;
-        }
+        //if (Input.GetKeyDown(KeyCode.Q))
+        //{
+        //    bandArma = 8;
+        //}
 
 
         //ACTIVACION DE ARMA
@@ -494,12 +590,12 @@ public class Movimientojugador : MonoBehaviour
                 {
                     Debug.Log(bandArma);
                     pistola.SetActive(false);
-                    botiquin.SetActive(true);
+                    botiquin.SetActive(false);
                     ak47.SetActive(false);
                     m4a1.SetActive(false);
                     rifle.SetActive(false);
                     granada.SetActive(false);
-                    hacha.SetActive(false);
+                    hacha.SetActive(true);
                     break;
                 }
             case 3:
@@ -557,12 +653,12 @@ public class Movimientojugador : MonoBehaviour
                 {
                     Debug.Log(bandArma);
                     pistola.SetActive(false);
-                    botiquin.SetActive(false);
+                    botiquin.SetActive(true);
                     ak47.SetActive(false);
                     m4a1.SetActive(false);
                     rifle.SetActive(false);
                     granada.SetActive(false);
-                    hacha.SetActive(true);
+                    hacha.SetActive(false);
                     break;
                 }
 
@@ -585,14 +681,5 @@ public class Movimientojugador : MonoBehaviour
 
 
     }
-
-
-
-
-
-
-
-
-
 
 }
