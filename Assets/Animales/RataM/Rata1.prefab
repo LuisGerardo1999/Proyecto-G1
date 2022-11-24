@@ -1466,12 +1466,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8742366266874237933}
-  - component: {fileID: -1529074603810969124}
   - component: {fileID: -3464828444561914265}
-  - component: {fileID: -2604989777180508511}
-  - component: {fileID: -581891204473143187}
-  - component: {fileID: 1257854274816841146}
-  - component: {fileID: -479667863876519729}
+  - component: {fileID: 2230398820025249941}
+  - component: {fileID: 885558309037627058}
+  - component: {fileID: -883910881126060806}
   m_Layer: 0
   m_Name: Rata1
   m_TagString: Untagged
@@ -1495,7 +1493,39 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!195 &-1529074603810969124
+--- !u!65 &-3464828444561914265
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8221549132663605591}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &2230398820025249941
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8221549132663605591}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!195 &885558309037627058
 NavMeshAgent:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1517,36 +1547,7 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!65 &-3464828444561914265
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8221549132663605591}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &-2604989777180508511
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8221549132663605591}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!114 &-581891204473143187
+--- !u!114 &-883910881126060806
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1558,41 +1559,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26f8fff640330e846adcb337c4ec594f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointer: {fileID: 1219998160010820540, guid: 9dbc305c3ae638e42819d89032606905, type: 3}
-  EnemyNaveMesh: {fileID: -1529074603810969124}
-  TransformPointer: {fileID: 1992171515627659526, guid: 9dbc305c3ae638e42819d89032606905, type: 3}
---- !u!95 &1257854274816841146
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8221549132663605591}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: eaa9a2499d653af4881791fdcde8bca3, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &-479667863876519729
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8221549132663605591}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee66000ef8bf76847b7555f62603d153, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TransformPlayer: {fileID: 1992171515627659526, guid: 9dbc305c3ae638e42819d89032606905, type: 3}
+  MensajesUI: {fileID: 0}
+  pointer: {fileID: 0}
+  EnemyNaveMesh: {fileID: 885558309037627058}
+  TransformPointer: {fileID: 0}
+  TransformPlayer: {fileID: 0}
 --- !u!1 &8450305235679190012
 GameObject:
   m_ObjectHideFlags: 0
