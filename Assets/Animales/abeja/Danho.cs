@@ -6,7 +6,7 @@ public class Danho : MonoBehaviour
 {
     // Start is called before the first frame update
     //private float life = 100.0f;
-    float life;
+    private float life;
     private void Start()
     {
         life = Random.Range(80, 120);
@@ -33,7 +33,7 @@ public class Danho : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        Debug.Log(transform.name + life);
+        //Debug.Log(transform.name + " VIDA: "+life);
         if (collision.transform.tag == "arma1")
         {
             

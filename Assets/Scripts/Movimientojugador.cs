@@ -19,7 +19,7 @@ public class Movimientojugador : MonoBehaviour
 
 
     // Variambles Menu
-    public int vida;
+    public float vida;
     public int municion;
     public int suministroImportante;
     public Transform Arma;
@@ -59,14 +59,6 @@ public class Movimientojugador : MonoBehaviour
          vida = 5;
          suministroImportante = 5;
          this.pick = 0;
-
-        //inicial
-        Debug.Log(municPistola);
-        Debug.Log(municAk47);
-        Debug.Log(municM4a1 );
-        Debug.Log(municRifle);
-        Debug.Log(municGranada);
-           
 
     }
     void Update()
@@ -162,7 +154,7 @@ public class Movimientojugador : MonoBehaviour
             anim.SetBool("IsLeft", false);
         }
         //Correr
-        if ((Input.GetKey(KeyCode.LeftShift)) && ((Input.GetKey(KeyCode.W)) || (Input.GetKey(KeyCode.S))))
+        if ((Input.GetKey(KeyCode.LeftShift)) && (bandArma == 0)  && ( (Input.GetKey(KeyCode.W)) || (Input.GetKey(KeyCode.S))  || (Input.GetKey(KeyCode.A))  || (Input.GetKey(KeyCode.D)) ) )
         {
             velocidad = 2.9f;
             anim.SetBool("IsRun", true);
@@ -171,6 +163,20 @@ public class Movimientojugador : MonoBehaviour
             
             anim.SetBool("IsRun", false);           
         }
+
+        //Correr con arma
+        if ((Input.GetKey(KeyCode.LeftShift)) && (bandArma != 0) && ((Input.GetKey(KeyCode.W)) || (Input.GetKey(KeyCode.S)) || (Input.GetKey(KeyCode.A)) || (Input.GetKey(KeyCode.D))))
+        {
+            velocidad = 2.9f;
+            anim.SetBool("IsWalking", true);
+        }
+        //else
+        //{
+
+        //    anim.SetBool("IsWalking", false);
+        //}
+
+
 
         // pick medio
         if ((Input.GetKey(KeyCode.T)) && (pick == 1))
@@ -463,9 +469,9 @@ public class Movimientojugador : MonoBehaviour
         if (collision.transform.tag == "enemigo1")
         {
 
-            Debug.Log("quita vida " + vida);
+            Debug.Log("Player vida " + vida);
             //Debug.Log(vida);
-            vida -= 1;
+            vida -= 0.01f;
         }
 
         if (collision.transform.tag == "enemigo1")

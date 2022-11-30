@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 3f9a722b17769564b872af6effb648c8
+labels:
+- specular
+- maps
+- normal
+- shared
+- alpha
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

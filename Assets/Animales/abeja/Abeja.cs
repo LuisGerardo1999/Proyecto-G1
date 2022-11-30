@@ -62,7 +62,7 @@ public class Abeja : MonoBehaviour
             grado = Random.Range(0, 360);
             angulo = Quaternion.Euler(0, grado, 0);
             transform.rotation = Quaternion.RotateTowards(transform.rotation, angulo, 5f);
-            transform.Translate(Vector3.forward * 2 * Time.deltaTime);
+            transform.Translate(Vector3.forward * 1.1f * Time.deltaTime);
             //anima.SetBool("BeeMove", false);
         }
 

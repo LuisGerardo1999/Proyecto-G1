@@ -11,6 +11,16 @@ TagManager:
   - pick40
   - pick80
   - pick100
+  - muro
+  - n2
+  - arma1
+  - cientifico
+  - enemigo1
+  - municPistola
+  - municAk47
+  - municM4a1
+  - municRifle
+  - municGranada
   layers:
   - Default
   - TransparentFX

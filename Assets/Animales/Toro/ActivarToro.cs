@@ -6,6 +6,7 @@ public class ActivarToro : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject objetoActivar;
+    public GameObject puertaActivar;
     void Start()
     {
         
@@ -22,6 +23,7 @@ public class ActivarToro : MonoBehaviour
         if(other.transform.tag == "Player")
         {
             objetoActivar.SetActive(true);
+            puertaActivar.SetActive(true);
         }
     }
 }

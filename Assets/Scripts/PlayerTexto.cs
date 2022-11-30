@@ -83,7 +83,6 @@ public class PlayerTexto : MonoBehaviour
     IEnumerator textMaquinaTiempo()
     {
         textoKim.fontSize = 10;
-        textoKim.font = default;
         textoKim.text = "Cambia de arma 1 - 5";
         yield return new WaitForSeconds(3);
         textoKim.text = "Salta con Barra Espaciadora";
@@ -97,6 +96,9 @@ public class PlayerTexto : MonoBehaviour
         textoKim.text = "Arriba, Abajo: W, S";
         yield return new WaitForSeconds(3);
         textoKim.text = "Izquierda, Derecha: A, D";
+        yield return new WaitForSeconds(3);
+        textoKim.text = "Consigue los suministros ";
+        
     }
    
 
