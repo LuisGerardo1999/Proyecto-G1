@@ -35,7 +35,7 @@ public class InsectoNeg : MonoBehaviour
         distPlayer = Vector3.Distance(transform.position, PosicionPlayer.position);
         anima = GetComponent<Animator>();
 
-        if (distPlayer < 5)
+        if (distPlayer < 10)
         {
             navEnemigo.destination = player.transform.position;
             if (distPlayer < 2)

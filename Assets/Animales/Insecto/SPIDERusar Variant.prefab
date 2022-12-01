@@ -65,7 +65,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2bb88aca32235db4fbe2defb840a75bf, type: 3}
       propertyPath: m_Name
-      value: SPIDERusar
+      value: SPIDERusar Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2bb88aca32235db4fbe2defb840a75bf, type: 3}
@@ -168,9 +168,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2445025419a15548ab9be28f8e425cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PosicionPlayer: {fileID: 0}
+  PosicionPlayer: {fileID: 188330471223888414, guid: a9acc1aed4d516f4c8a400691fb64681, type: 3}
   distPlayer: 4
-  player: {fileID: 0}
+  player: {fileID: 1994940496034116339, guid: a9acc1aed4d516f4c8a400691fb64681, type: 3}
   navEnemigo: {fileID: 1762021955}
   evento: 0
   anima: {fileID: 1762021954}

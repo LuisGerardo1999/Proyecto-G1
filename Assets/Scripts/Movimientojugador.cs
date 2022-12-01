@@ -54,6 +54,12 @@ public class Movimientojugador : MonoBehaviour
     public GameObject camarV;
     public GameObject miraV;
 
+    //private void Awake()
+    //{
+    //    SingleMenu.instanciaUnica.GetSingletonVida();
+        
+    //}
+
     void Start()
     {
          vida = 5;
@@ -426,6 +432,7 @@ public class Movimientojugador : MonoBehaviour
 
         if (other.transform.tag == "n1")
         {
+            SingleMenu.instanciaUnica.SetSingletonVida(vida);
             SceneManager.LoadScene(2);
         }
 
@@ -437,6 +444,11 @@ public class Movimientojugador : MonoBehaviour
         if (other.transform.tag == "n3")
         {
             SceneManager.LoadScene(4);
+        }
+
+        if (other.transform.tag == "n4")
+        {
+            SceneManager.LoadScene(0);
         }
 
     }

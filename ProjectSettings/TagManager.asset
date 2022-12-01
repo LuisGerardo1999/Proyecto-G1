@@ -21,6 +21,10 @@ TagManager:
   - municM4a1
   - municRifle
   - municGranada
+  - Municion
+  - Botiquin
+  - n3
+  - n4
   layers:
   - Default
   - TransparentFX
