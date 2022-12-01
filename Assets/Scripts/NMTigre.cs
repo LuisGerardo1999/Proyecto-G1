@@ -47,7 +47,8 @@ public class NMTigre : Mensajes
     {
         if(collision.transform.tag == "Player")
         {
-            MensajesUI.text = "El enemigo te ha atrapado";
+            MensajesUI.fontSize = 80;
+            MensajesUI.text = "El enemigo te esta atacando";
             Invoke("ResetearText", 5f);
         }
     }

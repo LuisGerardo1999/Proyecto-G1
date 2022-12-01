@@ -62,7 +62,7 @@ public class Movimientojugador : MonoBehaviour
 
     void Start()
     {
-         vida = 5;
+        vida = SingleMenu.instanciaUnica.GetSingletonVida() ;
          suministroImportante = 5;
          this.pick = 0;
 
@@ -438,16 +438,19 @@ public class Movimientojugador : MonoBehaviour
 
         if (other.transform.tag == "n2")
         {
+            SingleMenu.instanciaUnica.SetSingletonVida(vida);
             SceneManager.LoadScene(3);
         }
 
         if (other.transform.tag == "n3")
         {
+            SingleMenu.instanciaUnica.SetSingletonVida(vida);
             SceneManager.LoadScene(4);
         }
 
         if (other.transform.tag == "n4")
         {
+            SingleMenu.instanciaUnica.SetSingletonVida(vida);
             SceneManager.LoadScene(0);
         }
 
@@ -484,6 +487,10 @@ public class Movimientojugador : MonoBehaviour
             Debug.Log("Player vida " + vida);
             //Debug.Log(vida);
             vida -= 0.01f;
+            if (vida<= 0)
+            {
+                SceneManager.LoadScene(0);
+            }
         }
 
         if (collision.transform.tag == "enemigo1")
